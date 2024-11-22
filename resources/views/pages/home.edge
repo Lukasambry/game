@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RPG Tour par Tour - Votre Aventure Commence</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#0F8F68",
+              background: "#121212",
+              textLight: "#FFFFFF",
+              textMuted: "#CCCCCC",
+              secondary: "#001514",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="bg-background text-textLight font-sans min-h-screen flex flex-col">
+    <!-- Header -->
+    <header class="w-full bg-background py-4">
+      <div class="max-w-6xl mx-auto flex justify-between items-center px-4">
+        <h1 class="text-2xl font-bold">RPG Aventure</h1>
+        <div>
+          <a
+            href="/login"
+            class="px-4 py-2 bg-primary text-white font-medium rounded-md hover:bg-opacity-90 transition"
+          >
+            Connexion
+          </a>
+          <a
+            href="/register"
+            class="ml-2 px-4 py-2 border border-primary text-primary font-medium rounded-md hover:bg-primary hover:text-white transition"
+          >
+            Inscription
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="flex-grow flex flex-col justify-center items-center text-center px-4 py-16">
+      <h2 class="text-4xl font-extrabold text-primary mb-4">
+        Découvrez Votre Aventure
+      </h2>
+      <p class="text-lg text-textMuted mb-6 max-w-3xl">
+        Plongez dans un RPG au tour par tour captivant. Stratégie, exploration et personnalisation vous attendent. Créez votre équipe, combattez des ennemis épiques et explorez un monde mystérieux.
+      </p>
+      <a
+        href="/register"
+        class="px-6 py-3 bg-primary text-white font-semibold rounded-md text-lg hover:bg-opacity-90 transition"
+        style="box-shadow: 0px 4px 24px white; backdrop-filter: blur(10px);"
+      >
+        Rejoindre l'Aventure
+      </a>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-12 bg-secondary">
+      <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 px-4">
+        <div class="text-center">
+          <div
+            class="w-12 h-12 mx-auto bg-primary text-black flex items-center justify-center rounded-full mb-4"
+          >
+            🎮
+          </div>
+          <h3 class="text-lg font-semibold mb-2">Gameplay Stratégique</h3>
+          <p class="text-textMuted">
+            Concevez des tactiques uniques et prenez l'avantage sur vos ennemis dans des batailles passionnantes.
+          </p>
+        </div>
+        <div class="text-center">
+          <div
+            class="w-12 h-12 mx-auto bg-primary text-black flex items-center justify-center rounded-full mb-4"
+          >
+            🌟
+          </div>
+          <h3 class="text-lg font-semibold mb-2">Personnalisation</h3>
+          <p class="text-textMuted">
+            Créez et optimisez vos personnages avec des compétences et des équipements adaptés à votre style.
+          </p>
+        </div>
+        <div class="text-center">
+          <div
+            class="w-12 h-12 mx-auto bg-primary text-black flex items-center justify-center rounded-full mb-4"
+          >
+            🗺️
+          </div>
+          <h3 class="text-lg font-semibold mb-2">Exploration</h3>
+          <p class="text-textMuted">
+            Explorez des territoires inexplorés, trouvez des trésors cachés et découvrez des secrets anciens.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black text-textMuted py-4">
+      <div class="max-w-6xl mx-auto text-center">
+        <p>&copy; 2024 RPG Aventure. Tous droits réservés.</p>
+      </div>
+    </footer>
+  </body>
+</html>
